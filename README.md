@@ -2,4 +2,4 @@
 
 ## V1
 
-In the beginning, there was [a python file](a/folder/with/a/file.py).
+[In the beginning](tree/v1), there was [a python file](a/folder/with/a/file.py).
