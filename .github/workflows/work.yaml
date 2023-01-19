@@ -5,5 +5,5 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps: 
-      - run: python --version
-      - run: pip --version
+      - uses: actions/checkout@main
+      - run: python file.py
