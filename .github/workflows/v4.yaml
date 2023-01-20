@@ -3,6 +3,8 @@ on:
     paths:
       - .github/workflows/v4.yaml
       - v4/**/*
+env:
+  PYTHONUNBUFFERED: true
 
 jobs:
   job1:
