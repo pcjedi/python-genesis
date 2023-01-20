@@ -16,6 +16,5 @@ jobs:
           - it/got/consumed/at/different/locations
     steps: 
       - uses: actions/checkout@main
-      - run: pip install -U pip
       - run: pip install -r v5/the/backend/got/so/popular/${{ matrix.path }}/requirements.txt
       - run: python v5/the/backend/got/so/popular/${{ matrix.path }}/frontend.py
