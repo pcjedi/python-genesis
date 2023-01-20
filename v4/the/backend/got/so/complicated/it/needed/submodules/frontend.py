@@ -6,6 +6,6 @@ import requests
 print(requests.get("http://ip.jsontest.com/").json())
 print(complexstuff)
 backend.beneath.whoami()
-makeitrain(duration=0.01)
+makeitrain(duration=0.0001)
 backend.beneath.whoami()
 print("my name is: ", __name__)
