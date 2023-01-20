@@ -1,0 +1,13 @@
+on:
+  push:
+    paths:
+      - .github/workflows/v3.yaml
+      - v3/**/*
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@main
+      - run: pip install -r v3/a/project/so/complex/that/modules/requirements.txt
+      - run: python v3/a/project/so/complex/that/modules/emerged.py
