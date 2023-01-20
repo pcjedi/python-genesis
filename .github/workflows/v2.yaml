@@ -1,0 +1,10 @@
+on:
+  push:
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@main
+      - run: pip install -r v2/a/second/file/requirements.txt
+      - run: python v2/a/second/file/appeared.py
