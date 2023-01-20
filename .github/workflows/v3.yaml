@@ -9,5 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - uses: actions/checkout@main
-      - run: pip install -r v3/a/project/so/complex/that/modules/requirements.txt
-      - run: python v3/a/project/so/complex/that/modules/emerged.py
+      - run: pip install -r v3/a/project/so/complex/with/distinction/between/requirements.txt
+      - run: python v3/a/project/so/complex/with/distinction/between/frontend.py
