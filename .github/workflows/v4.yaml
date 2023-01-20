@@ -9,5 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - uses: actions/checkout@main
-      - run: pip install -r v4/the/stuff/got/so/complicated/it/requirements.txt
-      - run: python v4/the/stuff/got/so/complicated/it/diverged.py
+      - run: pip install -r v4/the/stuff/got/so/complicated/needed/submodules/requirements.txt
+      - run: python v4/the/stuff/got/so/complicated/needed/submodules/frontend.py

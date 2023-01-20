@@ -1,5 +1,5 @@
-from stuff import complexstuff
-from stuff.beneath import makeitrain
+from backend import complexstuff
+from backend.beneath import makeitrain
 import requests
 
 print(requests.get("http://ip.jsontest.com/").json())
