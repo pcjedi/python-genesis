@@ -1,5 +1,8 @@
 on:
   push:
+    paths:
+      - .github/workflows/v2.yaml
+      - v2/**/*
 
 jobs:
   job1:
