@@ -1,0 +1,20 @@
+on:
+  push:
+    paths:
+      - .github/workflows/v4.yaml
+      - v4/**/*
+env:
+  PYTHONUNBUFFERED: true
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        path:
+          - it/got/consumed
+          - it/got/consumed/at/different/locations
+    steps: 
+      - uses: actions/checkout@main
+      - run: pip install -r v5/the/backend/got/so/popular/${{ matrix.path }}/requirements.txt
+      - run: python v5/the/backend/got/so/popular/${{ matrix.path }}/frontend.py
