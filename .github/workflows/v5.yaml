@@ -1,8 +1,8 @@
 on:
   push:
     paths:
-      - .github/workflows/v4.yaml
-      - v4/**/*
+      - .github/workflows/v5.yaml
+      - v5/**/*
 env:
   PYTHONUNBUFFERED: true
 
