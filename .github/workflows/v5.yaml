@@ -16,9 +16,12 @@ jobs:
           - it/got/consumed/at/different/locations
     steps: 
       - uses: actions/checkout@main
+      - run: python --version
       - uses: actions/setup-python@v4
         with:
           python-version: '3.11.1' 
-      - run: pip install -U pip
+      - run: pip install -U pip setuptools
       - run: pip install -r v5/the/backend/got/so/popular/${{ matrix.path }}/requirements.txt
+      - run: pip freeze
+      - run: pip list
       - run: python v5/the/backend/got/so/popular/${{ matrix.path }}/frontend.py
